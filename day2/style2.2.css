@@ -1,0 +1,10 @@
+ table th,td{
+        border: 1px solid black;
+        width: 30%;
+     }
+table th{
+        background-color: blue;
+     }
+     table td{
+        background-color: lightblue;
+     }

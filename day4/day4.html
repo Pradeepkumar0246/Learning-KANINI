@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One-Stop Mobile Accessories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>One-Stop Mobile Accessories</h2>
+    <form id="orderForm">
+      <table>
+        <tr>
+          <td><label for="name">Name</label></td>
+          <td><input type="text" id="name" class="type" placeholder="Ex: Pradeep" required></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone No</label></td>
+          <td><input type="text" id="phone"class="type" placeholder="Ex: 9876543210" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email ID</label></td>
+          <td><input type="email" id="email"class="type" placeholder="EX: exampl@gmail.com" required></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address</label></td>
+          <td><textarea id="address" rows="2" class="type" placeholder="Ex: 123 street,abc District" required></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center; font-weight:bold;">Select Combo Offers</td>
+        </tr>
+        <tr>
+          <td rowspan="5">
+  <div style="margin-bottom: 30px;">
+    <label for="item1">
+      <input type="checkbox" class="combo" id="item1" value="500"> Wireless Earbuds
+    </label>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <label for="item2">
+      <input type="checkbox" class="combo" id="item2" value="600"> Power Bank 10000mAh
+    </label>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <label for="item3">
+      <input type="checkbox" class="combo" id="item3" value="700"> Bluetooth Speaker
+    </label>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <label for="item4">
+      <input type="checkbox" class="combo" id="item4" value="800"> Fast Charging Adapter
+    </label>
+  </div>
+  <div>
+    <label for="item5">
+      <input type="checkbox" class="combo" id="item5" value="900"> Mobile Holder for Bike
+    </label>
+  </div>
+</td>
+          <td class="combo-price">Price: ₹500</td>
+        </tr>
+        <tr>
+          <td class="combo-price">Price: ₹600</td>
+        </tr>
+        <tr>
+          <td class="combo-price">Price: ₹700</td>
+        </tr>
+        <tr>
+          <td class="combo-price">Price: ₹800</td>
+        </tr>
+        <tr>
+          <td class="combo-price">Price: ₹900</td>
+        </tr>
+      </table>
+      <button type="button" onclick="placeOrder()">PLACE ORDER</button>
+    </form>
+  </div>
+  <script src="day4.js"></script>
+</body>
+</html>

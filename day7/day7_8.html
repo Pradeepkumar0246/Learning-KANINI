@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hospital</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        .form {
+            margin: 70px auto;
+            width: 30vw;
+            min-height: 18vw; 
+            border: 10px black;
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 25px;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .details {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .label {
+            width: 40%;
+            font-weight: bold;
+        }
+        select, input {
+            width: 170px;
+            height: 30px;
+            text-align: center;
+            border-radius: 8px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+        button {
+            height: 30px;
+            background-color: rgb(40, 190, 140);
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #resultsTable {
+            margin: 20px auto;
+            width: 80%;
+            border-collapse: collapse;
+        }
+        #resultsTable th {
+            background-color: #8B0000;
+            color: white;
+            padding: 10px;
+        }
+        #resultsTable td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            background-color: white;
+        }
+        .items {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #statusMsg {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>Capital Blood Bank Center</header>
+    <div class="items">
+        <button id="getData">Get Data From API</button>
+        <span id="statusMsg"></span>
+    </div>
+    <form class="form">
+        <div class="details">
+            <div class="label">
+                <label for="patientid">Patient ID</label> 
+            </div>
+            <div>
+                <input type="text" id="patientid">
+            </div>
+        </div>
+        <div class="details">
+            <div class="label">
+                <label for="contactnumber">Contact Number</label>
+            </div>
+            <div>
+                <input type="tel" id="contactnumber">
+            </div>
+        </div>
+        <div class="details">
+            <div class="label">
+                <label for="AppointmentDate">Appointment Date</label>
+            </div>
+            <div>
+                <input type="date" id="AppointmentDate">
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; padding-top: 10px;">
+            <button type="button" id="search">Search</button>
+        </div>
+    </form>
+    <div id="result" style="width: 80%; margin: 20px auto;"></div>
+
+    <script src="day7_8.js"></script>
+</body>
+</html>

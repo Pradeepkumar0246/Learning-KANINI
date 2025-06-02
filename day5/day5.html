@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Tour Package Reservation</title>
+    <link rel="stylesheet" href="day5.css">
+</head>
+<body>
+    <h1 id="head">Online Tour package Reservation</h1>
+    <h3 id="head"><a href="package.html">Tour Package Deatils</a></h3>
+    <table id="table">
+        <form id="form">
+            <tr>
+                <td><label for="cs name">Customer Name</label></td>
+                <td><input type="text" id="cs name"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobile Number</label></td>
+                <td><input type="tel" pattern="[6-9]{1}[0-9]{9}" id="mobile"></td>
+            </tr>
+            <tr>
+                <td><label for="aadhar">Aadhar Number</label></td>
+                <td><input type="number" maxlength="12" id="aadhar"></td>
+            </tr>
+            <tr>
+                <td><label for="dateofcheckin">Date of CheckIn</label></td>
+                <td><input type="date" id="dateofcheckin" min="today"></td>
+            </tr>
+            <tr>
+                <td>Package Type</td>
+                <td>
+                    <select>
+                        <option disabled selected value="Select">..Select..</option>
+                        <option>1 Night & 2 Days</option>
+                        <option>2 Nights & 3 Days</option>
+                        <option>3 Nights & 4 Days</option>
+                        <option>4 Nights & 5 Days</option>
+                        <option>5 Nights & 6 Days</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="adult">Number Of Adult</label></td>
+                <td><input type="number" id="adult"></td>
+            </tr>
+            <tr>
+                <td><label for="children">Number of Children</label></td>
+                <td><input type="number" id="children"></td>
+            </tr>
+            <tr>
+                <td><label for="cc">Payment Mode</label></td>
+            <td><input type="radio" id="cc" value="CC">
+                <label for="cc">CC</label>
+                <input type="radio" id="dc" value="DC">
+                <label for="dc">DC</label>
+            </td>
+            </tr>
+            <tr>
+                <td><label for="Cardnumber">Card Number</label></td>
+                <td><input type="number" id="Cardnumber"></td>
+            </tr>
+            <tr>
+                <td><label for="cvvnumbed">Cvv Number</label></td>
+                <td><input type="number" id="cvvnumbed"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="button">
+                    <input type="submit" value="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

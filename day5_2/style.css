@@ -1,0 +1,31 @@
+.error{
+    color: red;
+}
+tr,td{
+    justify-content: space-between;
+    padding: 20px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+#submit{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: white;
+    background-color: black;
+}
+#head{
+    text-align: center;
+    color: aqua;
+}
+body{
+    background-color: gray;
+}
+#submit:hover{
+    background-color: aqua;
+    color: black;
+}

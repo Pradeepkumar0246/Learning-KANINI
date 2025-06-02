@@ -1,0 +1,48 @@
+#head1{
+    background-color: black;
+    height: 60px;
+    text-align: end;
+    align-content: center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
+.flex-image{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 30px;
+}
+.flex-image img{
+    width: 200px;
+    height: 200px;
+}
+.flex-anime:hover{
+    transform: scale(1.1);
+}
+.flex-movie:hover{
+    transform: scale(1.1);
+}
+.flex-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+}
+.head{
+    text-align: center;
+    animation: change 5s linear infinite;
+}
+@keyframes change{
+    0%{color: darkmagenta;}
+    25%{color: darkred;}
+    50%{color: darkgreen;}
+    75%{color: darkblue;}
+    100%{color: darkturquoise;}
+}
+body{
+    background-color: gray;
+}

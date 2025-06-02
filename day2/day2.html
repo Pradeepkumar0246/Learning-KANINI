@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASPER SPORTS ACADEMY</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1 id="head">JASPER SPORTS ACADEMY</h1>
+    <table id="table">
+        <form>
+        <tr>
+            <th>Player Registration Deatils</th>
+        </tr>
+        <tr>
+            <td id="Dateofreg">Date of Registration</td>
+            <td><input type="date" required> </td>
+        </tr>
+        <tr>
+            <td id="playerfullname">Name</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td id="ageofplayer">Age</td>
+            <td><input type="number" required></td>
+        </tr>
+        <tr>
+            <td id="sporttype">Sports type</td>
+            <td><input type="radio" id="indoor" name="sport" value="Indoor">
+            <label for="sport">Indoor</label>
+            <input type="radio" id="outdoor" name="sport" value="Outdoor">
+            <label for="sport">Outdoor</label></td>
+        </tr>
+        <tr>
+            <td id="telephonenumber">Phone Number</td>
+            <td><input type="tel" pattern="[6-9]{1}[0-9]{9}" required></td>
+        </tr>
+        <tr>
+            <td id="email">Email</td>
+            <td><input type="email" required></td>
+        </tr>
+        <tr>
+            <td id="addressfield">Address</td>
+            <td><textarea rows="4" cols="4" required></textarea></td>
+        </tr>
+        <tr>
+            <td id="numberofplayers">Number of Players</td>
+            <td><select>
+                <option disabled selected value="Select">..Select..</option>
+                <option>Single</option>
+                <option>Double</option>
+                <option>Multiple</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td id="playerlocation">Location</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <th>Sports(With Duration)</th>
+            <th>Sports fee</th>
+        </tr>
+        <tr>
+            <td rowspan="4"><input type="checkbox" id="athletics" name="athletics" value="Athletics"><label for="athletics">Athletics</label><br>
+            <input type="checkbox" id="cricket" name="cricket" value="Cricket"><label for="cricket">Cricket</label><br>
+            <input type="checkbox" id="basketball" name="basketball" value="Basketball"><label for="basketball">Basketball</label><br>
+            <input type="checkbox" id="tabletennis" name="tabletennis" value="Tabletennis"><label for="tabletennis">Tabletennis</label></td>
+            <td>Rs.20000/-</td>
+        </tr>
+        <tr>
+            <td>Rs.15000/-</td>
+        </tr>
+        <tr>
+            <td>Rs.35000/-</td>
+        </tr>
+        <tr>
+            <td>Rs.40000/-</td>
+        </tr>
+        <tr>
+            <td colspan="2">Birth Certificate(jpeg/pdf)<input type="file" name="Birthcertificate" accept=".jpeg,.pdf"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="timing.html" id="schedulelink">Schedule</a></td>
+        </tr>
+        <tr>
+            <td id="depositrange">Deposit</td>
+            <td><input type="range" min="5000" max="20000" required></td>
+        </tr>
+        <tr>
+            <td colspan="2">*A discount of 15% will be appliedon total amount on registering for more than 6 months</a></td>
+        </tr>
+        </form>
+    </table><br>
+    <button id="button" type="submit">Entroll</button>
+</body>
+</html>

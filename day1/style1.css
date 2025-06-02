@@ -1,0 +1,32 @@
+a{
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
+#head1{
+    background-color: orange;
+    height: 60px;
+    align-content: center;
+}
+#head_1{
+    text-align: center;
+}
+#Address{
+    background-color: silver;
+    margin-left: 70%;
+    height: 50px;
+    align-content: center;
+}
+#offer1{
+    background-color: yellow;
+    margin-right: 75%;
+    height: 50px;
+    align-content: center;
+}
+#foot1{
+    background-color: orange;
+    text-align: center;
+    height: 60px;
+    align-content: center;
+}

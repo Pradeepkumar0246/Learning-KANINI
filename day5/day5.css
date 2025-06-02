@@ -1,0 +1,17 @@
+#table{
+    margin-left: 40%;
+    background-color: #77F8AA;
+    border-spacing: 3px;
+    border-width: 5%;
+    border-style: solid;
+}
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+}
+#head{
+    text-align: center;
+}
+#button{
+    text-align: center;
+}

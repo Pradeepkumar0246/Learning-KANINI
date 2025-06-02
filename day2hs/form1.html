@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+<body>
+    <form>
+        <fieldset><legend>Customer Info</legend> 
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name"><br>
+        <label for="phone">Telephone:</label>
+        <input type="tel" id="phone" pattern="[3]-[3]-[4]" placeholder="pattern 234-567-8923"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="pradeepkumar@gmail.com">
+    </fieldset>
+    <fieldset>
+        <legend>Books</legend>
+        <label for="bookname">Bookname:</label>
+        <input type="text" id="bookname" placeholder="Harrypotter"><br>
+        <label for="quantity">Quantity(Max 5)</label>
+        <input type="number" id="quantity" min="1" max="5">
+    </fieldset>
+    </form>
+    <button onclick="window.alert('You have Successfully submitted the book form')" value="submit">submit</button>
+</body>
+</html>

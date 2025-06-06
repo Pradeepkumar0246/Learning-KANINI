@@ -1,0 +1,35 @@
+#myBtn {
+  display: none; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#myBtn:hover {
+  background-color: darkblue;
+}
+@media (max-width: 576px) {
+  .card-group {
+    flex-direction: column;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 577px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+}
